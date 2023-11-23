@@ -35,10 +35,3 @@ app.use(errorMiddleware);
 app.get("/", (req, res) => {
     res.send("Hello Server is Live");
 });
-
-app.listen(PORT, ()=> {
-    console.log(
-      `Sever Started on PORT ${process.env.PORT} in ${process.env.NODE_EVN} mode`
-        .yellow.bold
-    );
-});
