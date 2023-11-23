@@ -10,7 +10,7 @@ import { errorMiddleware } from './Middleware/error.js';
 
 dotenv.config();
 connectDB();
-const app = express();
+export const app = express();
 
 const PORT = process.env.PORT || 8080;
 
